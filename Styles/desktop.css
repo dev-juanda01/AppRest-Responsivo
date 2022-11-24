@@ -1,0 +1,215 @@
+header {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.8rem;
+    background-color: var(--colorBlue);
+    height: 130px;
+    color: var(--colorRed);
+}
+header #main_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+header #main_title img {
+    width: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 40%;
+}
+header #main_title h1 {
+    font-weight: normal;
+}
+header nav {
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+}
+header nav .main__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    list-style: none;
+}
+header nav .main__nav li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--colorWhite);
+}
+main .container .post {
+    width: 320px;
+    transition: box-shadow 0.3s ease;
+    background-color: rgb(151, 166, 183);
+    margin: 5rem 0;
+    border-radius: 1rem;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+main .container .post img {
+    width: 300px;
+    margin-left: 11px;
+    margin-right: 15px;
+}
+/* Diseño ordenador - Busqueda */
+.busqueda {
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.busqueda .main-logo {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+}
+.busqueda .main-logo img {
+    width: 170px;
+}
+.busqueda .main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+.busqueda .main-input-container {
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #0e4962;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.busqueda .main-input input {
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+.busqueda .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+.busqueda .main-button {
+    width: 530px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.busqueda .main-button button {
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 1px solid #0e4962;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+.busqueda .main-button button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    color: #222;
+}
+/* Diseño ordenador - Nuevo restaurante */
+.nuevo-rest {
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nuevo-rest .main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+.nuevo-rest .form-label {
+    font-size: 2.8rem;
+}
+.nuevo-rest .col-md-6,.col-12 {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+}
+.nuevo-rest .form-control {
+    width: 525px;
+    border-radius: 100px;
+    box-shadow: 0 1px 6px 0 #0e4962;
+    border-color: #1f418400;
+    border: 1px solid #0e4962;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nuevo-rest .main-input input {
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+}
+.nuevo-rest .form-control:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #0d44b100;
+    border: 1px solid #0e4962;
+}
+.nuevo-rest .col-12 button {
+    width: 530px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nuevo-rest .col-12 button {
+    width: 6rem;
+    height: 30px;
+    background-color: #f2f2f2;
+    border: 1px solid #0e4962;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 470px;
+}
+.nuevo-rest .col-12 button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    color: #222;
+}
+footer {
+    width: 100%;
+    height: 50px;
+    /* position: absolute; */
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background-color: var(--colorRed);
+    border-top: 1px solid #e4e4e4;
+}
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+footer .footer-left {
+    justify-content: left;
+}
+footer .footer-right {
+    justify-content: right;
+}
+footer ul li a {
+    margin: 10px;
+    color: var(--colorWhite);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
