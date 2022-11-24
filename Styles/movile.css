@@ -80,7 +80,7 @@ main .container .post img {
 /* Modo dispositivo movil busqueda */
 .busqueda {
     width: 300px;
-    height: 500px;
+    height: 600px;
     margin: auto;
     display: flex;
     justify-content: center;
