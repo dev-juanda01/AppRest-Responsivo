@@ -1,84 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/movile.css">
-    <link rel="stylesheet" href="Styles/desktop.css" media="screen and (min-width: 800px)">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/movile.css" />
+    <link rel="stylesheet" href="Styles/desktop.css" media="screen and (min-width: 800px)"/>
     <title>Busqueda</title>
-    <link rel="shortcut icon" href="Images/IUD.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="shortcut icon" href="Images/IUD.png" type="image/x-icon" />
+  </head>
+  <body>
     <header>
-        <div id="main_title">
-            <img src="Images/IUD.png" alt="Logo de zozor" id="logo">
-            <h1>Restaurante IU</h1>
-        </div>
-        <nav>
-            <ul class="main__nav">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#">Restaurante</a>
-                </li>
-                <li>
-                    <a href="Busqueda.html">Busqueda</a>
-                </li>
-                <li>
-                    <a href="New_Restaurant.html">Nuevo</a>
-                </li>
-            </ul>
-        </nav>
+      <div id="main_title">
+        <img src="Images/IUD.png" alt="Logo de zozor" id="logo" />
+        <h1>Restaurante IU</h1>
+      </div>
+      <nav>
+        <ul class="main__nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Restaurante</a>
+          </li>
+          <li>
+            <a href="Busqueda.html">Busqueda</a>
+          </li>
+          <li>
+            <a href="New_Restaurant.html">Nuevo</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="busqueda">
-        <div class="main-container">
-            <section class="main-logo">
-                <img src="Images/Lupa.png" alt="">
-            </section>
-            <section class="main-input">
-                <div class="main-input-container">
-                    <input type="text" placeholder="Buscar restaurantes">
-                </div>
-            </section>
-            <section class="main-button">
-                <div>
-                    <button>Buscar</button>
-                </div>
-            </section>
-        </div>
+      <div class="main-container">
+        <section class="main-logo">
+          <img src="Images/Lupa.png" alt=""/>
+        </section>
+        <section class="main-input">
+          <div class="main-input-container">
+            <input list="restaurantes" class="list-rest"/>
+            <datalist id="restaurantes">
+              <option value="Restaurante El Argentino"></option>
+              <option value="Restaurante Elegante"></option>
+              <option value="Restaurante Marino"></option>
+              <option value="Restaurante Mexicano"></option>
+            </datalist>
+          </div>
+        </section>
+        <section class="main-button">
+          <div>
+            <input type="submit" value="Buscar" id="boton">
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
-        <section>
-            <ul class="footer-left">
-                <li>
-                    <a href="">Publicidad</a>
-                </li>
-                <li>
-                    <a href="">Negocios</a>
-                </li>
-                <li>
-                    <a href="">Acerca de</a>
-                </li>
-                <li>
-                    <a href="">Contactanos ahora</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <ul class="footer-right">
-                <li>
-                    <a href="">Privacidad</a>
-                </li>
-                <li>
-                    <a href="">Condiciones</a>
-                </li>
-                <li>
-                    <a href="">Preferencias</a>
-                </li>
-            </ul>
-        </section>
+      <section>
+        <ul class="footer-left">
+          <li>
+            <a href="">Publicidad</a>
+          </li>
+          <li>
+            <a href="">Negocios</a>
+          </li>
+          <li>
+            <a href="">Acerca de</a>
+          </li>
+          <li>
+            <a href="">Contactanos ahora</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <ul class="footer-right">
+          <li>
+            <a href="">Privacidad</a>
+          </li>
+          <li>
+            <a href="">Condiciones</a>
+          </li>
+          <li>
+            <a href="">Preferencias</a>
+          </li>
+        </ul>
+      </section>
     </footer>
-</body>
+    <script src="./JS/busqueda.js" type="module"></script>
+  </body>
 </html>
